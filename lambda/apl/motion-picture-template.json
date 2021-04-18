@@ -1,0 +1,67 @@
+{
+    "document": {
+        "type": "APL",
+        "version": "1.6",
+        "settings": {},
+        "theme": "dark",
+        "import": [],
+        "resources": [],
+        "styles": {},
+        "onMount": [],
+        "graphics": {},
+        "commands": {},
+        "layouts": {},
+        "extensions": [
+            {
+                "name": "SmartMotion",
+                "uri": "alexaext:smartmotion:10"
+            }
+        ],
+        "mainTemplate": {
+            "parameters": [
+                "payload"
+            ],
+            "items": [
+                {
+                    "type": "Container",
+                    "width": "100%",
+                    "minWidth": "100%",
+                    "height": "100%",
+                    "minHeight": "100%",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "width": "100%",
+                            "minWidth": "100%",
+                            "height": "100%",
+                            "source": "${payload.data.url}",
+                            "scale": "fill",
+                            "align": "center",
+                            "onMount": [
+                                {
+                                    "type": "Sequential",
+                                    "repeatCount": 0,
+                                    "commands": [
+                                        {
+                                            "type": "SmartMotion:PlayNamedChoreo",
+                                            "delay": 1000,
+                                            "name": "${payload.data.choreo}"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "alignItems": "center",
+                    "justifyContent": "center"
+                }
+            ]
+        }
+    },
+    "datasources": {
+        "data": {
+            "url": "https://i.imgur.com/HZwo33w.png",
+            "choreo": "ScreenImpactCenter"
+        }
+    }
+}

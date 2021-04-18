@@ -1,0 +1,106 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "the snowy day trivia game",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop trivia game",
+            "no more",
+            "I am done playing",
+            "I\u0027m done playing",
+            "I am done",
+            "I\u0027m done",
+            "stop game",
+            "stop playing",
+            "let us take a break",
+            "let\u0027s take a break"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "SelectQuizAnswerIntent",
+          "slots": [
+            {
+              "name": "player_quiz_answer",
+              "type": "quiz_answer"
+            }
+          ],
+          "samples": [
+            "they are {player_quiz_answer}",
+            "I think it was {player_quiz_answer}",
+            "I think that was {player_quiz_answer}",
+            "that was {player_quiz_answer}",
+            "it was {player_quiz_answer} wasn\u0027t it",
+            "it was {player_quiz_answer} I think",
+            "it was {player_quiz_answer}",
+            "I think it is {player_quiz_answer}",
+            "I think the answer is {player_quiz_answer}",
+            "I think it\u0027s {player_quiz_answer}",
+            "the answer is {player_quiz_answer}",
+            "{player_quiz_answer}"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "WaitIntent",
+          "slots": [],
+          "samples": [
+            "wait",
+            "hold on",
+            "just a sec",
+            "just a second",
+            "give me a sec",
+            "give me a second",
+            "hold up",
+            "give me one second",
+            "I\u0027m thinking",
+            "please wait",
+            "wait please",
+            "please hold on",
+            "hold on please",
+            "just a sec please",
+            "please just a second",
+            "just a second please",
+            "please give me a sec",
+            "give me a sec please",
+            "hold on I\u0027m thinking",
+            "hold on I am thinking"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "dummy quiz answer"
+              }
+            }
+          ],
+          "name": "quiz_answer"
+        }
+      ]
+    }
+  },
+  "version": "3"
+}

@@ -1,0 +1,29 @@
+{
+    "type": "Dialog.UpdateDynamicEntities",
+    "updateBehavior": "REPLACE",
+    "types": [
+        {
+            "name": "quiz_answer",
+            "values": [
+                {
+                    "name": {
+                        "value": "Shibuya Junction",
+                        "synonyms": []
+                    }
+                },
+                {
+                    "name": {
+                        "value": "Mount Fuji",
+                        "synonyms": []
+                    }
+                },
+                {
+                    "name": {
+                        "value": "Hokkaido",
+                        "synonyms": []
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+{
+    "type": "Dialog.UpdateDynamicEntities",
+    "updateBehavior": "CLEAR"
+}

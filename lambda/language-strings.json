@@ -1,0 +1,179 @@
+{
+    "en": {
+        "translation": {
+            "opponent_names": [ "Zoe", "Grace", "Chris", "Julie"],
+            "welcome_msg": "<audio src='soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_intro_01'/> You'll be playing against {{opponent_name}}. Good luck!",
+            "question_msg": "<break time='1s'/> For {{point_value}} points. <break time='0.5s'/> {{intro}} <break time='0.5s'/> {{prompt}} <break time='0.5s'/> Is the answer, {{answer_0}}, <break time='0.8s'/> {{answer_1}}, <break time='0.8s'/> or {{answer_2}}.",
+            "welcome_msg_reprompt": "{{prompt}} <break time='0.5s'/> Is the answer, {{answer_0}}, <break time='0.8s'/> {{answer_1}}, <break time='0.8s'/> or {{answer_2}}.",
+            "selection_msg": "You chose {{player_quiz_answer}}.",
+            "opponent_correct_too_msg": "{{opponent_name}} got it right too.",
+            "opponent_incorrect_msgs": [
+                "didn't get it.",
+                "was incorrect.",
+                "got the answer wrong."
+            ],
+            "opponent_correct_msgs": [
+                "got the correct answer.",
+                "got the right answer.",
+                "got the question right.",
+                "answered correctly."
+            ],
+            "opponent_incorrect_too_msg": "{{opponent_name}} didn't get it either.",
+            "end_game_msg": "The game is over, let's see how you did. <audio src='soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_bridge_02'/>",
+            "positive_score_msg": "{{opponent_name}} scored {{opponent_points}} points. You scored. <audio src='soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_tally_positive_01'/> {{player_points}} points. <break time='1s'/> Way to go.",
+            "negative_score_msg": "{{opponent_name}} scored {{opponent_points}} points. You scored. <audio src='soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_tally_negative_01'/> {{player_points}} points. <break time='1s'/> Better luck next time.",
+            "neutral_score_msg": "Oh boy. You scored {{player_points}} points. <break time='0.5s'/> {{opponent_name}} scored. <audio src='soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_neutral_response_03'/> {{opponent_points}} points. <break time='1s'/> Good game!",
+            "wait_msg": "Of course. <break time = '{{break_time}}s'/> <amazon:emotion name='excited' intensity='low'> So whatcha think. </amazon:emotion>",
+            "wait_reprompt": "What do you think.",
+            "help_msg": "Give me your best guess.",
+            "goodbye_msg": "<amazon:emotion name='excited' intensity='low'> Thanks for playing! </amazon:emotion>",
+            "intent_reflector_msg": "You just triggered {{intent_name}}",
+            "error_msg": "Sorry, I had trouble doing what you asked. Please try again.",
+            "questions": [
+                {
+                    "point_value": 10,
+                    "intro": "One winter morning, Peter woke-up.",
+                    "prompt": "What did Peter draw on his window.",
+                    "correct_answer_msg": "I <amazon:emotion name='excited' intensity='high'> love </amazon:emotion> snow-days!",
+                    "wrong_answer_msg": "Peter drew a snowflake on his window.",
+                    "answers": [
+                        "a smiley face",
+                        "a star",
+                        "a snowflake"
+                    ],
+                    "correct_answer_index": 2
+                },
+                {
+                    "point_value": 10,
+                    "intro": "While getting ready for the day Peter gets his scarf, but couldn't find one of his mittens.",
+                    "prompt": "Where was Peter's missing mitten.",
+                    "correct_answer_msg": "Cookies are my favorite dessert!",
+                    "wrong_answer_msg": "Peter's mom finds the mitten behind the cookie jar.",
+                    "answers" : [
+                        "under his bed",
+                        "behind the cookie jar",
+                        "on the christmas tree"
+                    ],
+                    "correct_answer_index": 1
+                },
+                {
+                    "point_value": 10,
+                    "intro": "Peter was told to help his grandma bring food over for the party that night.",
+                    "prompt": "What food was Peter's grandma bringing.",
+                    "correct_answer_msg": "I like the dinosaur-shaped macaroni.",
+                    "wrong_answer_msg": "Peter's grandma was bringing mac 'n' cheese.",
+                    "answers" : [
+                        "mac 'n' cheese",
+                        "turkey",
+                        "blueberry pie"
+                    ],
+                    "correct_answer_index": 0
+                },
+                {
+                    "point_value": 10,
+                    "intro": "After putting on his snow suit, Peter went outside and ran into Nathan.",
+                    "prompt": "What did Nathan say today is the perfect day for.",
+                    "correct_answer_msg": "Nathan has a great voice.",
+                    "wrong_answer_msg": "Nathan says it's the perfect day for singing. He has a great voice.",
+                    "answers" : [
+                        "playing outside",
+                        "singing",
+                        "drinking hot chocolate"
+                    ],
+                    "correct_answer_index": 1
+                },
+                {
+                    "point_value": 30,
+                    "intro": "As Peter headed over to his grandma's, a bird watches him.",
+                    "prompt": "What type of bird watches Peter.",
+                    "correct_answer_msg": "Northern cardinals are so pretty.",
+                    "wrong_answer_msg": "A bright red northern cardinal was looking at Peter; they're so pretty.",
+                    "answers" : [
+                        "a dove",
+                        "a blue jay",
+                        "a cardinal"
+                    ],
+                    "correct_answer_index": 2
+                },
+                {
+                    "point_value": 30,
+                    "intro": "Peter met Nathan who sells chestnuts and said he can't spend the holidays with his family who live far away.",
+                    "prompt": "Which of the following places are not where Nathan's family live.",
+                    "correct_answer_msg": "California is a bit far for the subway.",
+                    "wrong_answer_msg": "Nathan has family in California and Philadelphia. So Florida was the right answer.",
+                    "answers" : [
+                        "California",
+                        "Florida",
+                        "Philadelphia"
+                    ],
+                    "correct_answer_index": 1
+                },
+                {
+                    "point_value": 10,
+                    "intro": "Peter met Mrs. Lee who was shoveling snow outside her shop.",
+                    "prompt": "What present did Peter tell Mrs. Lee he wanted.",
+                    "correct_answer_msg": "I want one too! Sledding is so much fun!",
+                    "wrong_answer_msg": "Peter wanted a saucer.",
+                    "answers" : [
+                        "a saucer",
+                        "a shield",
+                        "a sword"
+                    ],
+                    "correct_answer_index": 0
+                },
+                {
+                    "point_value": 10,
+                    "intro": "Layla ran into Peter who said he is rescuing nana's mac 'n' cheese from a dragon.",
+                    "prompt": "What character did Peter say he was.",
+                    "correct_answer_msg": "I'd be a knight too.",
+                    "wrong_answer_msg": "Peter pretended a stick he found was a sword, and that he was a knight.",
+                    "answers" : [
+                        "a funny dwarf",
+                        "a brave knight",
+                        "a mountain climber"
+                    ],
+                    "correct_answer_index": 1
+                },
+                {
+                    "point_value": 10,
+                    "intro": "Layla donated a gift as part of her family tradition.",
+                    "prompt": "What did Peter put in the donation box.",
+                    "correct_answer_msg": "It's nice to give to those in need.",
+                    "wrong_answer_msg": "Peter donated his scarf. It's nice to give to those in need.",
+                    "answers" : [
+                        "his time",
+                        "his mittens",
+                        "his scarf"
+                    ],
+                    "correct_answer_index": 2
+                },
+                {
+                    "point_value": 10,
+                    "intro": "Peter and everyone in the neighborhood had a snowball fight.",
+                    "prompt": "What happened to the sled with the gifts and macaroni.",
+                    "correct_answer_msg": "Accidents happen.",
+                    "wrong_answer_msg": "The sled broke in the playground.",
+                    "answers" : [
+                        "raccoons stole it",
+                        "it was hit by a snow plow",
+                        "it broke in the playground"
+                    ],
+                    "correct_answer_index": 2
+                },
+                {
+                    "point_value": 30,
+                    "intro": "Last question! Near the end of the party, Peter gets the door but no one was there, except for a gift, a new saucer.",
+                    "prompt": "Who gave Peter the new saucer.",
+                    "correct_answer_msg": "Looks like you got the hint from the message, from one knight to another. Nice!",
+                    "wrong_answer_msg": "The gift had the message, from one knight to another. It was Ahmed.",
+                    "answers" : [
+                        "Ahmed",
+                        "George",
+                        "Nana"
+                    ],
+                    "correct_answer_index": 0
+                }
+            ]
+        }
+    }
+}
